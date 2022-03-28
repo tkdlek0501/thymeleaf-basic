@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+ <meta charset="UTF-8">
+ <title>Title</title>
+</head>
+<body>
+<ul>
+ <li style="">Elvis 연산자 (조건식의 축약 버전)
+ <ul>
+ <li>${data}?: '데이터가 없습니다.' = <span th:text="${data}?: '데이터가없습니다.'"></span></li>
+ <li>${nullData}?: '데이터가 없습니다.' = <span th:text="${nullData}?: '데이터가 없습니다.'"></span></li>
+ </ul>
+ </li>
+ <!-- <li>No-Operation
+ <ul>
+ <li>${data}?: _ = <span th:text="${data}?: _">데이터가 없습니다.</span></li>
+ <li>${nullData}?: _ = <span th:text="${nullData}?: _">데이터가없습니다.</span></li>
+ </ul>
+ </li> -->
+</ul>
+</body>
+</html>

@@ -13,3 +13,5 @@ public class ThymeleafBasicApplication {
 }
 
 // 타임리프 기본기능 요약 정리
+// 타임리프 사용 선언 : 
+// <html xmlns:th="http://www.thymeleaf.org">

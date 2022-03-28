@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+<h1>컨텐츠에 데이터 출력</h1>	
+<ul>
+	<li>th:text와 [] 는 이스케이프를 자동으로 한다.(문자를 문자 그대로 인식하게)</li>
+	<li>th:text 사용 <span th:text="${data}"></span></li>
+	<li>컨텐츠 안에서 직접 출력 = [[${data}]]</li>
+</ul>
+
+<ul>
+	<li>unescape 하려면 아래와 같은 방법으로 사용하면 된다.(html 태그 사용가능)</li>
+	<li>th:text 사용 <span th:utext="${unescape}"></span></li>
+	<li style="color:red;">컨텐츠 안에서 직접 출력 = [(${unescape})]</li>
+</ul>	
+	
+	
+</body>
+</html>
